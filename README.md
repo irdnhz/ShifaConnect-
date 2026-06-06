@@ -1,193 +1,59 @@
-# ShifaConnect!
-## Shariah-Compliant Elderly Care & Medical Companion Registry
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
----
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-# Group Members
-| Name | Matric No |
-|---|---|
-| NUR IRDINAH BINTI MOHD ZAMANI | 2417126 |
-| AINA NAJIHAH BINTI MOHAMMAD AZIZI | 2412952 |
-| NUR HAZIQA AISYA BINTI KHUZAI | 2416416 |
+## About Laravel
 
----
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-# 1.0 Introduction
-**ShifaConnect!** is a specialized, web-based Model-View-Controller (MVC) application engineered using the Laravel framework to digitalize and streamline home-based elderly care management. 
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-  Traditional care companion recruitment relies heavily on fragmented, manual communication channels such as WhatsApp or Telegram broadcasts and paper-based tracking sheets. This introduces severe risks regarding data loss, unverified credentials, scheduling conflicts, and compromised religious values. 
-  
-  **ShifaConnect!** addresses these structural inefficiencies by serving as a secure, centralized repository that seamlessly bridges Muslim families with certified healthcare assistants, nurses, and physiotherapists. Built on a foundational logic of Shariah compliance, the platform automates secure authentication, credential auditing, operational logs, and strict gender-matched caregiving configurations to protect patient *awrah* and family peace of mind.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-  In order to deliver high performance and reliability during evaluation, the system architecture incorporates a robust core by utilizing the Laravel MVC architectural pattern built on PHP. Next, the system streamlines database management by powering data relationships, structural matching, and historical log durability via a MySQL database driven by Laravel Eloquent ORM. Lastly, the system secures the platform by restricting resource routing uniquely between Admins, Families, and Caregivers using role-based middleware.  
-   
----
-# 1.1 Problem Description
+## Learning Laravel
 
-## 1.1.1 Background of the Problem
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
 
-Currently, most Muslim families requiring home-care assistants or medical companions rely on informal recommendations through word-of-mouth or disorganized digital channels. The typical process involves making broadcast announcements on social media, posting requests in community WhatsApp groups, or contacting multiple private agencies over the phone. 
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-  
-  Simultaneously, independent caregivers like freelance nurses or physical therapists struggle to market their services to families requiring specific medical or cultural schedules. Once hired, everyday operations such as logging patient vitals, tracking medication times, and altering appointment schedules are kept in physical paper notebooks or scattered instant messaging chats. This manual ecosystem makes it impossible for working family members to monitor their loved ones’ medical progress transparently or count on historical data reliability.
+## Laravel Sponsors
 
----
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-## 1.1.2 Problem Statement
+### Premium Partners
 
-The current manual processes in home-based elderly care suffer from four critical vulnerabilities:
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
-1. **No Shariah-Aligned Matching:**
+## Contributing
 
-General healthcare directories lack gender-filtering options. This makes it difficult for Muslim families to guarantee the privacy and *awrah* protection of their bedridden relatives.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-2. **Unreliable Medical Tracking:**
+## Code of Conduct
 
-Relying on paper logs or unorganized text messages leads to lost data and miscommunication, leaving families without a reliable medical history for doctor reviews.
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-3. **High Scheduling Friction:**
+## Security Vulnerabilities
 
-Managing appointments manually via phone calls and texts frequently causes double-booking errors and wastes time with back-and-forth communication.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-4. **Credential Verification Anxiety:**
+## License
 
-Families experience safety anxieties because there is no centralized, transparent system to verify the backgrounds and professional certifications of independent caregivers.
-
----
-
-# 1.2 Project Objectives
-
-The main objective of this project is to develop **ShifaConnect!**, a Shariah-compliant web application that connects families with verified caregivers for elderly or bedridden patients.
-The specific objectives are:
-
-1. To simplify the process of finding and booking verified caregivers online.
-2. To provide gender-matched caregiving services according to Islamic values.
-3. To automate appointment scheduling and medical log management.
-4. To provide a user-friendly dashboard for users and administrators.
-5. To improve communication between caregivers and family members.
-
----
-
-# 1.3 Features and Functionalities
-## User Management
-- User registration and login
-- Profile management
-- Secure authentication system
-
-## Caregiver Management
-- Create caregiver profiles
-- Update caregiver availability
-- Search and filtering system
-
-## Appointment Management
-- Appointment booking
-- Appointment scheduling
-- Booking history tracking
-
-## Medical Log Management
-- Record patient medical logs
-- Update treatment records
-- Monitor patient progress
-
-## Review and Rating System
-- Submit caregiver reviews
-- Rating system for caregivers
-
-## Admin Dashboard
-- Manage users and caregivers
-- Monitor appointments and activities
-- Verify caregiver accounts
-
-# 1.4 Project Scope
-
-## Scope
-
-ShifaConnect! is a web-based MVC application designed to manage elderly care services and caregiver appointments efficiently. The system provides a centralized platform where families can search for suitable caregivers based on their preferences.
-
-The system includes:
-- User registration and login
-- Caregiver profile management
-- Appointment booking
-- Medical log management
-- Review and rating system
-- Admin dashboard
-
-The current version does not include:
-- Online payment gateway
-- Video consultation
-- Emergency healthcare response
-
----
-## Targeted Users
-
-### Muslim Families
-Families looking for trusted caregivers for elderly or bedridden family members.
-
-### Professional Caregivers
-Nurses, physiotherapists, and healthcare assistants offering caregiving services.
-
-### Elderly Patients
-Senior citizens requiring medical monitoring and home-care support.
-
-### System Administrators
-Users responsible for system monitoring and caregiver verification.
-
----
-
-## Specific Platform
-
-### Software Requirements
-- Laravel Framework
-- PHP
-- HTML, CSS, JavaScript
-- MySQL Database
-- Visual Studio Code
-- XAMPP Server
-- GitHub
-
-### Hardware Requirements
-- Personal computer or laptop
-- Smartphone or tablet
-- Stable internet connection
-
-### Network Requirements
-- Internet connection
-- Localhost server environment during development
-
-The system will be developed and tested using XAMPP on localhost. GitHub will be used for version control and code backup.
-
----
-# 1.5 Constraints
-The development of ShifaConnect! may face several constraints during implementation. One of the main challenges is maintaining the privacy and security of patient medical records because the system handles sensitive healthcare information. Strong security measures are required to prevent unauthorized access and protect user data.
-Another constraint is the verification process for caregivers. The system must ensure that all registered caregivers are trustworthy, qualified and comply with Shariah requirements such as gender-matched caregiving services. This process may require additional time and administrative monitoring.
-In addition, some elderly users may have limited experience using digital platforms, which could make the system difficult for them to use independently. Internet dependency and limited development time may also affect system performance and project completion.
-
----
-
-
-# 1.6 ERD
-![ShifaConnect ERD Diagram](erd-diagram.png)
-
----
-
-# 1.7 Sequence Diagram
-<img width="2168" height="3528" alt="image" src="https://github.com/user-attachments/assets/718da3d2-b5c2-4fb4-a41f-ad4815f99c24" />
-
-
----
-# 1.8 Significance of the Project
-ShifaConnect! provides significant benefits to Muslim families by helping them find trusted and verified caregivers for elderly patients. The system promotes Shariah-compliant caregiving by ensuring gender-appropriate caregiver arrangements.
-
-Furthermore, the application improves healthcare monitoring through organized medical logs and appointment management. It also strengthens communication between caregivers and family members, making elderly care more efficient, secure, and accessible.
-
----
-
-# 1.9 Summary
-ShifaConnect! provides many benefits to Muslim families by helping them find trusted and verified caregivers for elderly or bedridden family members. The system promotes Shariah-compliant caregiving by ensuring gender-appropriate care services that align with Islamic values and user comfort.
-
-Besides that, the application improves healthcare management through organized appointment booking and medical log monitoring. Family members can easily monitor patient conditions and communicate with caregivers through the system. This project also supports the growing need for accessible and efficient home-care services in the community.
-
-
----
-
-# 1.10 References
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
